@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://ea58qudfikbb"]
+
+[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_keexg"]
+[ext_resource type="PackedScene" uid="uid://c4jiuvleqa16f" path="res://scenes/user_interface/user_interface.tscn" id="2_m383e"]
+[ext_resource type="PackedScene" uid="uid://n7e1hhn3hnpc" path="res://scenes/databases/pokemons/db_pokemons.tscn" id="3_ptuwx"]
+[ext_resource type="PackedScene" uid="uid://tlwep405ngcx" path="res://scenes/databases/routes/DBRoutes.tscn" id="4_v88a7"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_keexg")
+packed_user_interface = ExtResource("2_m383e")
+packed_db_pokemons = ExtResource("3_ptuwx")
+packed_db_routes = ExtResource("4_v88a7")
+
+[node name="Databases" type="Node" parent="."]
